@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang's website!</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-vertical-container">
+      <img src="images/intro/person.png" class="person-img">
+      <div class="speech-bubble-intro">
+        Angela Bi...
+      </div>
+      <div class="bio-card" id="about">
+        <div class="bio-card-bg"> 
+          <div class="bio-card-inner">
+            <div class="bio-card-text">
+              <div class="horizontal-container">
+                <div class="intro-card">
+                  ...is currently a first-year PhD student at UIUC working with <a target="_blank" rel="noopener noreferrer" href="https://ssterman.web.illinois.edu/">Sarah Sterman</a>.
+                </div>
+                <div class="intro-card">
+                  ...is interested in exploring different ways to support <a href="#" onclick="showTab('research', event, true); return false;">programmers and artists</a>!
+                </div>
+                <div class="intro-card">
+                  ...enjoys <a href="#" onclick="showTab('art', event, true); return false;">drawing</a>, playing volleyball, and sending funny cat videos to <a target="_blank" rel="noopener noreferrer" href="https://joshbarua.github.io/">Josh</a>.
+                </div>
+              </div>
+
+              <div class="contact">
+                <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://github.com/angela-bi">Github</a>
+                <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=x-VYkboAAAAJ&hl=en">Google Scholar</a>
+                <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/angela-lulu-bi">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-menu">
+        <!-- <button class="tab-item" onclick="location.href='#about'" id="about-tab">About</button> -->
+        <button class="tab-item" onclick="showTab('research', event, true)">Research</button>
+        <button class="tab-item" onclick="showTab('art', event, true)">Art</button>
+        <button class="tab-item" onclick="showTab('project', event, true)">Tinkering!</button>
+      </div>
+      <div class="research" id="research">
+        <!-- <h1>Research</h1> -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="research-badge under-review">Under<br>Review</div>
+            <img src="images/research/config_canvas.png">
+          </div>
+          <div class="research-content">
+            <h2>Reimagining Tool Configuration as Material with configCanvases</h2>
+            <h3><b>Angela Bi</b>, Ritik Batra, Eric Rawn, Thijs Roumen</h3>
+            <p class="description">For non-computational art media such as pottery, physical painting, and woodworking, configuring tools is not an independent
+              task necessary in order to make art; it is a complex, intertwined part of working with materials during the creative process. We explore how to make digital tool configuration
+              more material for digital drawing software with configCanvas, an interface where users change digital brush
+              parameters by adding colors onto a watercolor canvas. In a three-week study, we saw how experienced artists used configCanvases to negotiate
+              intentions, develop new rhythms of working between tool and artwork, and generate histories of configuration.</p>
+            <div class="research-links">
+              <button class="research-link inactive">Preprint</button>
+              <button class="research-link active" onclick="window.open('https://github.com/angela-bi/creative_constraint','_blank')">Github</button>
+            </div>
+          </div>
+        </div>
+        <div class="research-item">
+          <div class="research-image">
+            <div class="research-badge accepted">CHI<br>2026!</div>
+            <img src="images/research/perpend.jpeg">
+          </div>
+          <div class="research-content">
+            <h2>Programming by Scaffolded Demonstration with Perpend</h2>
+            <h3><b>Angela Bi&ast;</b>, Eric Rawn&ast;, Justin Lubin, Sarah Chasins</h3>
+            <p class="description">An important part of creative programming involves discovering what code should do in the first place. We built Perpend, a p5.js editor that displays the visual output of many possible modifications of the user’s program at a selected place in the program text, and found that helping creative programmers understand the possibilities around their program changed how they formed intentions for their program and visual outputs.</p>
+            <div class="research-links">
+              <button class="research-link active" onclick="window.open('https://dl.acm.org/doi/abs/10.1145/3772318.3791327','_blank')">ACM DL</button>
+              <button class="research-link active" onclick="window.open('https://github.com/angela-bi/p5_pbcd','_blank')">Github</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="art" id="art">
+        
+        <div class="art-section">
+          <h2>Editorial Illustrations</h2>
+          <div class="carousel-container">
+            <button class="carousel-btn" id="prev">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="73" y1="14.3" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="73" y1="79.4" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-image tall">
+                  <img src="images/editorial/image.png">
+                </div>
+                <div class="carousel-image tall">
+                  <div class="stacked">
+                    <img src="images/editorial/IMG_7585.PNG">
+                    <img src="images/editorial/IMG_7598.PNG">
+                  </div>
+                </div>
+                <div class="carousel-image tall">
+                  <div class="stacked">
+                    <img src="images/editorial/IMG_7586.PNG">
+                    <img src="images/editorial/IMG_7589.PNG">
+                  </div>
+                </div>
+                <div class="carousel-image tall">
+                  <img src="images/editorial/IMG_7587.PNG">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn" id="next">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="14.3" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="30" y1="79.4" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <div class="art-section">
+          <h2>Digital Art</h2>
+          <div class="carousel-container">
+            <button class="carousel-btn" id="prev">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="73" y1="14.3" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="73" y1="79.4" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-image">
+                  <img src="images/digital/Untitled_Artwork 14.png">
+                </div>
+                <div class="carousel-image">
+                  <img src="images/digital/Untitled_Artwork 15.png">
+                </div>
+                <div class="carousel-image">
+                  <img src="images/digital/Untitled_Artwork 16.png">
+                </div>
+                <div class="carousel-image">
+                  <img src="images/digital/Untitled_Artwork 17.png">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn" id="next">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="14.3" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="30" y1="79.4" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="art-section">
+          <h2>Figure Drawing</h2>
+          <div class="carousel-container">
+            <button class="carousel-btn" id="prev">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="73" y1="14.3" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="73" y1="79.4" x2="30" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-image figure">
+                  <img src="images/figure/IMG_0249.JPG">
+                </div>
+                <div class="carousel-image figure">
+                  <img src="images/figure/IMG_0039.jpg">
+                </div>
+                <div class="carousel-image figure">
+                  <img src="images/figure/IMG_9301.JPG">
+                </div>
+                <div class="carousel-image figure">
+                  <img src="images/figure/IMG_9836.JPG">
+                </div>
+                <div class="carousel-image figure">
+                  <img src="images/figure/IMG_0014.jpg">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn" id="next">
+              <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="14.3" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+                <line x1="30" y1="79.4" x2="73" y2="46" stroke="antiquewhite" stroke-width="15" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" id="project">
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/projects/pastiche.png">
+            <h2>Pastiche <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://pastiche.vercel.app/">try it out!</a></h2>
+            <p class="description">A phone-based camera web app that allows users to cut and draw with their camera feed. Inspired by scrap-booking, re-use, and taking up screen space.</p>
+          </div>
+          <div class="project-item">
+            <img src="images/projects/IMG_7513 2.jpg">
+            <h2>Portrait Lace Maker <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/angelabi2003/sketches/RkzG2-F0e">p5 code</a></h2>
+            <p class="description">Code that transforms web-camera feed into a repeating circular pattern. Experimented with using cri-cut to cut a pattern out, but more work needed to improve the process!</p>
+          </div>
+          <div class="project-item">
+            <img src="images/projects/sound_brush.png">
+            <h2>Sound Brush <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/angelabi2003/sketches/D8daj3hrs">p5 code</a></h2>
+            <p class="description">A simple drawing software made on p5.js, with a sound visualizer and a brush whose size reacts to your surrounding sound level.</p>
+          </div>
+          <div class="project-item">
+            <img src="images/projects/image.png">
+            <h2>Squish photo booth <a class="underline-wiggle" target="_blank" rel="noopener noreferrer" href="https://github.com/angela-bi/Interactive-Lab-Hub/tree/Fall2025/Lab%205">github</a></h2>
+            <p class="description">A photo booth that allows the user to snap squished images of their face using their fingers. Built using Media Pipe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <!-- <img src="images/neocities.png"> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
